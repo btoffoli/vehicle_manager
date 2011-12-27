@@ -1,3 +1,3 @@
 class PartVehicle < ActiveRecord::Base
-  belongs_to [:PartVehicleType, :Vehicle]
+  belongs_to :part_vehicle_type, :vehicle
 end

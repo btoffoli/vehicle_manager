@@ -1,11 +1,17 @@
 VehicleManager::Application.routes.draw do
-  get "account/list"
+  resources :accounts
 
-  get "account/new"
+  get "accounts/index"
 
-  get "account/edit"
+  get "accounts/show"
 
-  get "account/delete"
+  get "accounts/new"
+
+  get "accounts/edit"
+
+  get "accounts/update"
+
+  get "accounts/destroy"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
